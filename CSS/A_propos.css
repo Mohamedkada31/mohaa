@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Barre latérale */
+.sidebar {
+    background: #30363d;
+    color: white;
+    height: 100vh;
+    width: 20vw; /* Ajustement automatique */
+    min-width: 200px; /* Taille minimale */
+    max-width: 300px; /* Taille maximale */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background: #444;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Styles du titre */
+.titre {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Styles du paragraphe */
+.description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}

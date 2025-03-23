@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+/* Barre latérale */
+.sidebar {
+    background: #30363d;
+    color: white;
+    height: 100vh;
+    width: 20vw; /* Ajustement automatique */
+    min-width: 200px; /* Taille minimale */
+    max-width: 300px; /* Taille maximale */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background: #444;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 22vw; /* Évite le chevauchement avec la sidebar */
+    padding: 20px;
+    width: 78vw; /* Utilisation dynamique de l’espace restant */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
