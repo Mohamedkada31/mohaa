@@ -1,0 +1,86 @@
+/* Sign_In.css */
+body {
+    background-color: #0d1117;  /* Définit une couleur de fond sombre pour toute la page */
+    color: #c9d1d9;  /* Définit la couleur du texte pour assurer une bonne lisibilité */
+    font-family: Arial, sans-serif;  /* Utilise la police Arial ou une police sans-serif par défaut */
+    display: flex;  /* Active le mode flexbox pour organiser les éléments */
+    justify-content: center;  /* Centre les éléments horizontalement */
+    align-items: center;  /* Centre les éléments verticalement */
+    height: 100vh;  /* Définit la hauteur du body à 100% de la hauteur de l’écran */
+    margin: 0;  /* Supprime les marges par défaut du body */
+}
+
+form {
+    background-color: #161b22;  /* Définit un fond légèrement plus clair pour le formulaire */
+    padding: 20px;  /* Ajoute un espace interne autour du contenu du formulaire */
+    border-radius: 8px;  /* Arrondit les bords du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Ajoute une ombre pour donner un effet 3D */
+    width: 320px;  /* Définit une largeur fixe pour le formulaire */
+    text-align: center;  /* Centre tout le texte à l’intérieur du formulaire */
+}
+
+
+div {
+    margin-bottom: 15px;  /* Ajoute un espace en bas de chaque div pour espacer les champs */
+    text-align: left;  /* Aligne le texte à gauche à l'intérieur de chaque div */
+}
+
+
+label {
+    font-size: 14px;  /* Définit une taille de texte de 14px */
+    font-weight: bold;  /* Met le texte en gras */
+}
+
+input {
+    width: 100%;  /* Fait en sorte que l'input prenne toute la largeur du formulaire */
+    padding: 8px;  /* Ajoute un espace interne pour que le texte ne soit pas collé aux bords */
+    margin-top: 5px;  /* Ajoute un petit espace entre le label et l’input */
+    background-color: #0d1117;  /* Donne la même couleur de fond que le body */
+    border: 1px solid #30363d;  /* Ajoute une bordure avec une couleur sombre */
+    border-radius: 5px;  /* Arrondit légèrement les coins */
+    color: #c9d1d9;  /* Définit la couleur du texte */
+}
+
+
+input:focus {
+    border-color: #58a6ff;  /* Change la couleur de la bordure lorsqu'on clique sur le champ */
+    outline: none;  /* Supprime le contour par défaut (souvent bleu sur les navigateurs) */
+}
+
+
+button {
+    width: 100%;  /* Le bouton prend toute la largeur du formulaire */
+    padding: 10px;  /* Ajoute un espace interne pour qu’il soit plus facile à cliquer */
+    background-color: #238636;  /* Définit un fond vert */
+    border: none;  /* Supprime la bordure par défaut */
+    border-radius: 5px;  /* Arrondit les coins */
+    font-size: 16px;  /* Définit une taille de police plus grande */
+    font-weight: bold;  /* Rend le texte du bouton plus visible */
+    color: white;  /* Change la couleur du texte en blanc */
+    cursor: pointer;  /* Change le curseur en main pour montrer que c'est cliquable */
+}
+
+
+button:hover {
+    background-color: #2ea043;  /* Change la couleur du bouton en vert plus clair au survol */
+}
+
+
+a {
+    display: block;  /* Force le lien à occuper toute la largeur du parent */
+    margin-top: 15px;  /* Ajoute un espace au-dessus du lien */
+    color: #58a6ff;  /* Définit une couleur bleue */
+    text-decoration: none;  /* Supprime le soulignement par défaut */
+    font-size: 14px;  /* Ajuste la taille du texte */
+}
+
+
+a:hover {
+    text-decoration: underline;  /* Ajoute un soulignement au survol pour montrer que c'est cliquable */
+}
+
+text{
+    color: #58a6ff;
+    font-size: 14px;
+    font-weight: bold;
+}

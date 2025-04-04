@@ -1,0 +1,95 @@
+/* Sign_Up.css */
+body {
+    background-color: #0d1117;  /* Définit une couleur de fond sombre pour toute la page */
+    color: #c9d1d9;  /* Définit la couleur du texte pour assurer une bonne lisibilité */
+    font-family: Arial, sans-serif;  /* Définit une police de caractères standard */
+    display: flex;  /* Utilisation de flexbox pour centrer les éléments */
+    justify-content: center;  /* Centre les éléments horizontalement */
+    align-items: center;  /* Centre les éléments verticalement */
+    height: 100vh;  /* Définit la hauteur du body à 100% de la hauteur de l’écran */
+    margin: 0;  /* Supprime les marges extérieures par défaut */
+}
+
+
+.form-container {
+    background-color: #161b22;  /* Définit une couleur de fond légèrement plus claire que le body */
+    padding: 20px;  /* Ajoute un espace intérieur pour éviter que le contenu touche les bords */
+    border-radius: 8px;  /* Arrondit les coins du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Ajoute une ombre pour un effet de profondeur */
+    width: 320px;  /* Définit une largeur fixe pour le formulaire */
+    text-align: center;  /* Centre le texte à l'intérieur du formulaire */
+}
+
+
+.input-group {
+    margin-bottom: 15px;  /* Ajoute un espace entre chaque groupe de champs */
+    text-align: left;  /* Aligne le texte des labels à gauche */
+}
+
+
+label {
+    font-size: 14px;  /* Définit une taille de police de 14px */
+    font-weight: bold;  /* Met le texte en gras pour plus de visibilité */
+}
+
+
+input {
+    width: 100%;  /* Assure que l’input prend toute la largeur du formulaire */
+    padding: 8px;  /* Ajoute un espace interne pour rendre l’entrée plus confortable */
+    margin-top: 5px;  /* Ajoute un petit espace entre le label et l’input */
+    background-color: #0d1117;  /* Utilise la même couleur de fond que le body */
+    border: 1px solid #30363d;  /* Ajoute une bordure sombre pour définir l’entrée */
+    border-radius: 5px;  /* Arrondit légèrement les bords */
+    color: #c9d1d9;  /* Définit la couleur du texte */
+}
+
+
+input:focus {
+    border-color: #58a6ff;  /* Change la couleur de la bordure lorsqu'on clique sur le champ */
+    outline: none;  /* Supprime le contour par défaut du navigateur */
+}
+
+
+.button-container {
+    margin-top: 15px;  /* Ajoute un espace au-dessus du bouton */
+}
+
+
+button {
+    width: 100%;  /* Le bouton occupe toute la largeur du formulaire */
+    padding: 10px;  /* Ajoute un espace interne pour agrandir le bouton */
+    background-color: #238636;  /* Définit une couleur de fond verte */
+    border: none;  /* Supprime les bordures par défaut */
+    border-radius: 5px;  /* Arrondit les coins du bouton */
+    font-size: 16px;  /* Augmente la taille du texte pour une meilleure lisibilité */
+    font-weight: bold;  /* Rend le texte plus visible */
+    color: white;  /* Définit la couleur du texte en blanc */
+    cursor: pointer;  /* Change le curseur en main au survol */
+}
+
+
+button:hover {
+    background-color: #2ea043;  /* Change la couleur du bouton en vert plus clair au survol */
+}
+
+
+.signin-link {
+    display: block;  /* Force le lien à occuper toute la largeur du parent */
+    margin-top: 15px;  /* Ajoute un espace au-dessus du lien */
+    color: #58a6ff;  /* Définit une couleur bleue */
+    text-decoration: none;  /* Supprime le soulignement par défaut */
+    font-size: 14px;  /* Ajuste la taille du texte */
+}
+
+
+.signin-link:hover {
+    text-decoration: underline;  /* Ajoute un soulignement au survol pour indiquer que c'est cliquable */
+}
+
+.Texte {
+    color: #c9d1d9;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}

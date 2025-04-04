@@ -61,27 +61,26 @@ body {
     border-radius: 5px;
 }
 
-/* Conteneur des images */
-.images-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptatif */
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
-    justify-content: center;
-}
 
-
-.images-container img {
-    width: 200px; /* Taille fixe pour uniformiser */
-    height: 200px; /* Taille fixe pour uniformiser */
-    object-fit: cover; /* Coupe l'image pour remplir le cadre sans déformation */
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
 
 .images-container img:hover {
     transform: scale(1.05);
 }
 
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    grid-template-rows: repeat(2, 1fr); /* Deux lignes */
+    gap: 10px; /* Espacement entre les images */
+    width: 100%;
+    max-width: 500px; /* Ajuste la taille de la grille */
+    margin: 0 auto; /* Centre la grille */
+}
+
+.images-container img {
+    width: 100%; /* Remplit chaque cellule */
+    aspect-ratio: 1 / 1; /* Rend les images carrées */
+    object-fit: cover; /* Évite la déformation */
+    border-radius: 5px; /* Coins arrondis (optionnel) */
+}

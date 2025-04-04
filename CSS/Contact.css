@@ -118,3 +118,20 @@ button {
 button:hover {
     background-color: #2ea043;
 }
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    color: #c9d1d9;
+    resize: vertical; /* Permet à l'utilisateur d'agrandir si nécessaire */
+    min-height: 100px; /* Ajuste la hauteur minimale */
+}
+
+textarea:focus {
+    border-color: #58a6ff;
+    outline: none;
+}
