@@ -1,4 +1,5 @@
 <?php
+require_once 'config.php';
 // Connexion à la base de données
 $host = 'localhost';
 $dbname = 'nom_de_ta_base';  // Remplace par le nom exact de ta base

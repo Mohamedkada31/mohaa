@@ -1,4 +1,5 @@
 <?php
+require_once 'config.php';
 // Démarrer une session (utile plus tard)
 session_start();
 
