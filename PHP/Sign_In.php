@@ -1,18 +1,12 @@
 <?php
-require_once '../PHP/config.php';
+$host = '192.168.1.13';
+$dbname = 'site';      // 🔁 Remplace avec le nom réel de ta base
+$user = 'mohamed';
+$pass = '12345678';
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-    $stmt = $pdo->prepare("SELECT * FROM utilisateurs WHERE email = ?");
-    $stmt->execute([$email]);
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if ($user && password_verify($password, $user['password'])) {
-        echo "✅ Connexion réussie !";
-    } else {
-        echo "❌ Email ou mot de passe incorrect.";
-    }
 }
 ?>

@@ -1,5 +1,9 @@
 <?php
-require_once '../PHP/config.php'; // Assure-toi que le chemin est correct
+$host = '192.168.1.13';
+$dbname = 'site';      // 🔁 Remplace avec le nom réel de ta base
+$user = 'mohamed';
+$pass = '12345678';
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'];
@@ -8,15 +12,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    if ($password !== $confirm_password) {
-        die("❌ Les mots de passe ne correspondent pas.");
-    }
-
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-
-    $stmt = $pdo->prepare("INSERT INTO utilisateurs (email, username, age, password) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$email, $username, $age, $hash]);
-
-    echo "✅ Inscription réussie !";
 }
 ?>
