@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$dbname = 'nom_de_ta_base';      // 🔁 Remplace avec le nom réel de ta base
+$host = '192.168.1.13';
+$dbname = 'site';      // 🔁 Remplace avec le nom réel de ta base
 $user = 'mohamed';
-$pass = 'Mohamed31.';
+$pass = '12345678';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
