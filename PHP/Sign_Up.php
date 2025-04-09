@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php'; // Assure-toi que le chemin est correct
+require_once '../PHP/config.php'; // Assure-toi que le chemin est correct
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'];
